@@ -34,7 +34,7 @@ emit、props、ref、$parent、$children、eventBus、provide/inject、vuex
 
 
 
-# vue-routerffffeewfafds
+# vue-router
 
 ## 1. Hash和 History的区别
 
@@ -213,7 +213,7 @@ null === undefined // false
 
 ### 1.this指向
 
-在普通函数中this指向（执行上下文）是动态的，取决于函数是如何被调用的，谁调用this就只想谁。
+在普通函数中this指向（执行上下文）是动态的，取决于函数是如何被调用的，谁调用this就指向谁。
 
 无论何时执行或在何处执行，箭头函数内部的this都指向的是外部函数，即箭头函数不会改变this的指向，也可以理解未箭头函数中没有this。
 
@@ -247,7 +247,7 @@ function fun(){
 fun(1,2,3) // Arguments(3)[1,2,3]
 ```
 
-在箭头函数中没有arguments对象，不够可以使用...args
+在箭头函数中没有arguments对象，不过可以使用...args
 
 ```javascript
 const fun = () => {
@@ -271,3 +271,39 @@ const sum = (a, b) => {
 }
 const sum = (a, b) => (a + b);
 ```
+
+## 8.显式原型和隐式原型
+
+显式原型：`prototype`
+
+隐式原型：`__proto__`
+
+只有**函数**才有**显式原型**（`prototype`），它指向的是一个**Object 空对象** ，原型对象`prototype`中有一个`constructor`属性，它指向函数对象本身；
+
+每个**实例对象**都有**隐式原型**（`__proto__`），**隐式原型**指向的是它上层的原型的**显式原型**
+
+证实：
+
+```javascript
+function Fun(){}
+const fun = new Fun();
+const str = ''
+
+//证明只有函数才有显式原型
+console.log(Fun.prototype) // {}
+console.log(fun.prototype) // undefied
+console.log(str.prototype) // undefied
+
+// 证明函数的显式原型指向的是一个Object 空对象
+console.log(typeof Fun.prototype === 'object', Object.keys(Fun.prototype)) // true, []
+// 原型对象prototype中有一个constructor属性，它指向函数对象本身
+console.log(Fun.prototype.constructor === Fun)
+
+// 证明隐式原型指向的是它上层的原型的显式原型
+console.log(Fun.__proto__ === Function.prototype) // true
+console.log(fun.__proto__ === Fun.prototype) // true
+console.log(str.__proto__ === String.prototype) // true
+```
+
+
+
