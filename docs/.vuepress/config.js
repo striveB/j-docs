@@ -2,7 +2,7 @@ const interviewSidebar = [
   {
     title: "面试",
     sidebarDepth: 5,
-    children: ["index"],
+    children: [""],
   },
 ];
 const vueSidebar = [
@@ -153,7 +153,7 @@ module.exports = {
     },
     nav: [
       { text: "🏡", link: "/" },
-      //   { text: "面试题", link: "/interview/" },
+      { text: "面试题", link: "/interview/" },
       {
         text: "Vue",
         items: [
