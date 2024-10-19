@@ -7,7 +7,7 @@
 | [VueX 和 EventBus 的区别和使用场景](https://www.jianshu.com/p/5628bb944571)                                     |
 | [forEach、filter、map 间的区别以及使用场景](https://zhuanlan.zhihu.com/p/291089608)                             |
 | [cookie、sessionStorage 和 localStorage 的区别](https://blog.csdn.net/weixin_42614080/article/details/90706499) |
-| ![img](https://img-blog.csdnimg.cn/20190530212538979.png)                                                       |
+| ![img](./image.png)                                                       |
 
 # Vue
 
@@ -33,6 +33,43 @@
 
 emit、props、ref、$parent、$children、eventBus、provide/inject、vuex
 
+## 4. vue优缺点
+
+优点：渐进式，组件化，轻量级，虚拟dom，响应式，单页面路由，数据与视图分开
+
+缺点：单页面不利于seo，不支持IE8以下，首屏加载时间长
+
+## 5. 为什么v-if和v-for不建议用在同一标签？
+
+在Vue2中，`v-for`优先级是高于`v-if`的
+
+例子：
+
+```js
+<div v-for="item in [1, 2, 3, 4, 5, 6, 7]" v-if="item !== 3">
+    {{item}}
+</div>
+```
+
+上面的写法是`v-for`和`v-if`同时存在，会先把7个元素都遍历出来，然后再一个个判断是否为3，并把3给隐藏掉，这样的坏处就是，渲染了无用的3节点，增加无用的dom操作，建议使用computed来解决这个问题。
+
+**在vue3中v-if优先级高于v-for，所以他们混用时会直接报错！**
+
+## 6.自定义v-model
+
+默认情况下，v-model 是 @input 事件侦听器和 :value 属性上的语法糖。但是，你可以在你的Vue组件中指定一个模型属性来定义使用什么事件和value属性
+
+```javascript
+export default: {
+  model: {
+    event: 'change',
+    prop: 'checked'  
+  }
+}
+```
+
+
+
 # vue-router
 
 ## 1. Hash 和 History 的区别
@@ -47,7 +84,7 @@ emit、props、ref、$parent、$children、eventBus、provide/inject、vuex
 
 - `hash` 变化会触发网页跳转，即浏览器的前进和后退。
 - `hash` 可以改变 `url` ，但是不会触发页面重新加载（hash 的改变是记录在 `window.history` 中），即不会刷新页面。
-- `hash` 通过 `window.onhashchange` 的方式，来监听 `hash` 的改变，借此实现无刷新跳转的功能。
+- **`hash` 通过 `window.onhashchange` 的方式，来监听 `hash` 的改变，借此实现无刷新跳转的功能。**
 - `hash` 永远不会提交到 `server` 端
 
 ### 1.1.1 url 的属性
@@ -87,7 +124,7 @@ location.hash; // '#/aaa/bbb'
 
 - 可以额外设置 `title` 属性，以便后续使用。
 
-- 通过 `pushState` 、 `replaceState` 来实现无刷新跳转的功能。
+- **通过 `pushState` 、 `replaceState` 来实现无刷新跳转的功能**。
 
 ### 1.2.1 History API
 
@@ -97,6 +134,16 @@ location.hash; // '#/aaa/bbb'
 | history.replaceState(data, title[,url]) |                                                                               更改当前的历史记录，参数同上                                                                                |
 |              history.state              |                                                                 用于存储以上方法的 data 数据，不同浏览器的读写权限不一样                                                                  |
 |            window.onpopstate            |                                                        点击浏览器前进、后退以及调用 history.go,history.back,history.forward 会触发                                                        |
+
+# vuex
+
+## 1. vuex的有哪些属性？
+
+- State：定义了应用状态的数据结构，可以在这里设置默认的初始状态。
+- Getter：允许组件从 Store 中获取数据，mapGetters 辅助函数仅仅是将 store 中的 getter 映射到局部计算属性。
+- Mutation：是唯一更改 store 中状态的方法，且必须是同步函数。
+- Action：用于提交 mutation，而不是直接变更状态，可以包含任意异步操作。
+- Modules：允许将单一的 Store 拆分为多个 store 且同时保存在单一的状态树中。
 
 # JavaScript
 
@@ -117,7 +164,7 @@ location.hash; // '#/aaa/bbb'
 
 ```javascript
 /*
-  myNew函数要接受不定量的参数，第一个参数是构造函数（也就是new操作符的目标函数），其余参数被构造函数使用。
+  myNew函数要接收不定量的参数，第一个参数是构造函数（也就是new操作符的目标函数），其余参数被构造函数使用。
   new myNew() 是一种js语法糖。我们可以用函数调用的方式模拟实现
 */
 function myNew(Fn, ...args) {
@@ -138,7 +185,17 @@ function myNew(Fn, ...args) {
 
 > 闭包：当一个内部函数被调用，就会形成闭包，闭包就是能够读取其他函数内部变量的函数。
 >
-> 作用：局部变量无法共享和长久的保存，而全局变量可能造成变量污染，所以我们希望有一种机制既可以长久保存变量有不会造成全局污染。
+> 作用：
+>
+> 1.封装变量：闭包可以封装变量，防止变量被外部访问和修改，从而实现数据的私有化和保护。
+>
+> 2.延长变量的生命周期：当函数执行完毕后，其内部的变量通常会被销毁，但是如果该函数返回了一个闭包，那么该闭包就可以一直访问和使用这些变量，从而延长了它们的生命周期。
+>
+> 3.实现函数的柯里化：闭包可以实现函数的柯里化，即将一个多参数的函数转换成一个单参数的函数序列，这样可以更加灵活地使用函数。
+>
+> 4.实现模块化：通过使用闭包，可以实现模块化的编程方式，将函数和变量封装在一个作用域内，避免了命名冲突和全局变量的污染。
+>
+> **过度使用闭包可能会导致内存泄漏和性能问题，因此需要谨慎使用。**
 
 ## 4. Promise 是什么
 
@@ -303,3 +360,177 @@ console.log(Fun.__proto__ === Function.prototype); // true
 console.log(fun.__proto__ === Fun.prototype); // true
 console.log(str.__proto__ === String.prototype); // true
 ```
+
+## 9. call、apply、bind区别
+
+**相同**：他们三个都属于函数的方案，用于改变函数内部this的指向
+
+| 方法    | 函数执行时机 | 传参方式                           |
+| ------- | ------------ | ---------------------------------- |
+| call()  | 立即执行     | (this指向对象,参数1,参数2,参数3)   |
+| apply() | 立即执行     | (this指向对象,[参数1,参数2,参数3]) |
+| bind()  | 返回当前函数 | (this指向对象,参数1,参数2,参数3)   |
+
+# 浏览器
+
+## 1.浏览器展示html文件的过程
+
+![image-20230408211459646](/Users/gyj/Library/Application Support/typora-user-images/image-20230408211459646.png)
+
+1. HTML内容被HTML解析器解析生成DOM树
+
+2. CSS内容被CSS解析器解析生产CSSOM树（CSSOM树生成之后开始执行js文件暂定DOM树解析）
+
+3. DOM树+CSSOM树会生产Render Tree（渲染树）
+4. 生成布局，浏览器根据渲染树来布局，以计算每个节点的几何信息
+5. 将各个节点绘制到屏幕上
+
+## 2.重排与重绘
+
+- 重绘：元素的外观被改变，例如：元素的背景颜色发生变化
+- 重排：重新生成布局，重新排列元素，例如：元素的尺寸、位置发生变化
+
+### 2.1 重排(Reflow)
+
+> 当DOM的变化影响了元素的几何信息(元素的的位置和尺寸大小)，浏览器需要重新计算元素的几何属性，将其安放在界面中的正确位置，这个过程叫做**重排**。
+
+*重排也叫做**回流***
+
+**重排的代价是高昂的，会破坏用户体验，并且让UI展示非常迟缓，重排重绘非常耗费资源，是导致网页性能低下的根本原因。**
+
+我们应尽量减少重排，最简单的方式是：
+
+1. 缩小重排范围
+
+   - 应该尽量以局部布局的形式组织HTML结构，使各个结构间相互独立，当某个结构发生重排时，不会影响到页面上的其它结构
+   - 应该尽可能在底层级的元素上设置样式，削弱修改样式时，对页面其它元素带来影响
+   - 不要使用table布局，可能很小的一个小改动会造成整个table的重新布局
+
+2. 减少重排次数
+
+   - 通过`documentFragment`创建一个 `dom` 碎片,在它上面批量操作 `dom`，操作完成之后，再添加到文档中，这样只会触发一次重排
+   - 使用 absolute 或 fixed 脱离文档流：使用 `absolute` 或 `fixed` 脱离文档流使用绝对定位会使的该元素单独成为渲染树中 `body` 的一个子元素，重排开销比较小，不会对其它节点造成太多影响
+
+   - 分离读写操作：DOM 的多个读操作（或多个写操作），应该放在一起。不要两个读操作之间，加入一个写操作
+
+     ```javascript
+     // bad 强制刷新 触发四次重排+重绘
+     div.style.left = div.offsetLeft + 1 + 'px';
+     div.style.top = div.offsetTop + 1 + 'px';
+     div.style.right = div.offsetRight + 1 + 'px';
+     div.style.bottom = div.offsetBottom + 1 + 'px';
+     
+     
+     // good 缓存布局信息 相当于读写分离 触发一次重排+重绘
+     var curLeft = div.offsetLeft;
+     var curTop = div.offsetTop;
+     var curRight = div.offsetRight;
+     var curBottom = div.offsetBottom;
+     ```
+
+### 2.2 重绘(Repaints)
+
+> 当一个元素的外观发生改变，但没有改变布局，浏览器重新把元素的外观绘制出来的过程，叫做**重绘**。
+
+**`重排必定会引发重绘，但重绘不一定会引发重排`**
+
+## 3. 浏览器的渲染过程以及网页性能优化
+
+**渲染过程**
+
+1. 解析 HTML：浏览器会将 HTML 代码解析成 DOM 树，根据 DOM 结构创建节点对象，同时解析 CSS 和 JavaScript，生成 CSSOM 和 JavaScript 对象模型。
+2. 构建渲染树：浏览器会根据 DOM 和 CSSOM 构建渲染树，它是由可见的文档对象组成的树形结构，其中每个节点都是一个渲染对象。
+3. 布局和绘制：浏览器会根据渲染树的结构和样式信息进行布局和绘制。布局是指计算出每个节点在屏幕上的位置和大小，绘制是指将节点的内容绘制在屏幕上。这个过程也称为“重排”和“重绘”。
+4. 合成和显示：浏览器会将绘制好的图像传递给 GPU，GPU 会将图像合成为页面，并在屏幕上显示出来。
+
+**优化**
+
+1. 减少 DOM 操作和重绘：DOM 操作和重绘会触发浏览器的渲染过程，因此过多的操作会影响性能。可以通过一些技术，如事件委托、批量修改样式等来减少操作次数。
+2. 使用 CSS3 动画和过渡：CSS3 动画和过渡可以由浏览器的 GPU 加速，因此比 JavaScript 动画性能更好。
+3. 压缩和合并代码：将多个 CSS 或 JavaScript 文件压缩和合并成一个文件，可以减少请求次数和文件大小。
+4. 使用缓存：将静态资源缓存在客户端，可以减少请求次数和带宽占用，提高网站的访问速度。
+5. 优化图片：使用合适的图片格式和压缩算法，可以减少图片大小和加载时间。
+
+## 4. 什么是BFC
+
+BFC是块格式化上下文（Block Formatting Context）的缩写，它是Web页面中用于布局和定位HTML元素的一种CSS渲染机制。BFC是一个隔离的容器，在 BFC 内部，浮动元素会受到限制，即不会溢出容器，并且块级元素在垂直方向上按照一定规则排列，可以防止 margin 重叠等问题。
+
+在BFC中，会创建新的块级格式化上下文，并定义了一些规则来控制其中元素的布局和表现。一些常见的创建BFC的方式包括：
+
+- 根元素
+- 浮动元素（float属性不为none）
+- 绝对定位元素（position属性为absolute或fixed）
+- display属性值为inline-block、table-cell、table-caption、flex、inline-flex等
+
+BFC的作用在于可以帮助开发者更好地控制页面元素的布局和显示效果，减少因为元素相互干扰而产生的错误和布局问题。
+
+## 5.常见网络请求状态码
+
+1. **200** OK：表示服务器成功处理了请求，并返回对应的资源。
+2. **301** Moved Permanently：表示请求的资源已被永久移动到新位置，客户端需要使用新的URL进行访问。
+3. **302** Found：表示请求的资源已被暂时移动到新位置，客户端需要使用新的URL进行访问。与301状态码不同之处在于，302状态码表示资源只是暂时被移动，将来可能会恢复原来的位置。
+4. **400** Bad Request：表示客户端发出了一个错误的请求，服务器无法理解。
+5. **401** Unauthorized：表示请求未经授权，需要有效的身份验证才能访问所需的资源。
+6. **403** Forbidden：表示服务器拒绝了客户端的请求，因为客户端没有访问该资源的权限。
+7. **404** Not Found：表示请求的资源在服务器上不存在。
+8. **500** Internal Server Error：表示服务器在处理请求时发生了意外的错误，导致无法完成客户端的请求。
+
+## 6. TCP和UDP协议
+
+TCP（传输控制协议）和UDP（用户数据报协议）是两种常用的互联网传输协议。
+
+TCP是一种面向连接、可靠的传输协议，它通过三次握手建立连接，并且在数据传输过程中进行错误校验和重传，确保数据的准确性和完整性。TCP适用于对数据传输质量要求较高的场景，如文件传输、电子邮件等。
+
+UDP是一种无连接、不可靠的传输协议，它不需要建立连接和维护状态，只是简单地将数据包发送出去，因此速度相对较快，但可能会存在数据传输丢失或乱序的情况。UDP适用于实时通信和流媒体等场景，如在线游戏、视频直播等。
+
+# 代码实现
+
+## 1.实现一个节流函数， 最后一次必须执行
+
+```javascript
+function throttle(fn, delay) {
+  let timer = null;
+  let lastExecTime = 0;
+  return function(...args) {
+    const currTime = Date.now();
+    const timeSinceLastExec = currTime - lastExecTime;
+    if (!timer || timeSinceLastExec >= delay) {
+      lastExecTime = currTime;
+      clearTimeout(timer);
+      timer = null;
+      fn.apply(this, args);
+    } else if (!timer) {
+      timer = setTimeout(() => {
+        lastExecTime = Date.now();
+        timer = null;
+        fn.apply(this, args);
+      }, delay - timeSinceLastExec);
+    }
+  };
+}
+```
+
+## 2.去除字符串中出现次数最少的字符，不改变原字符串的顺序。
+
+```javascript
+let str = "aaababdee";
+function removeLeast(str) {
+  const charCount = str.split("").reduce((count, char) => {
+    count[char] = count[char] ? count[char] + 1 : 1;
+    return count;
+  }, {});
+  console.log(charCount);
+  const leastCount = Math.min(...Object.values(charCount));
+  return str
+    .split("")
+    .filter((char) => charCount[char] !== leastCount)
+    .join("");
+}
+
+console.log(removeLeast(str)); // aaababee
+```
+
+
+
+# Css
+
