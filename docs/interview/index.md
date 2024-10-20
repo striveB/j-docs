@@ -387,7 +387,7 @@ console.log(str.__proto__ === String.prototype); // true
 
 ## 1.浏览器展示html文件的过程
 
-![image-20230408211459646](/Users/gyj/Library/Application Support/typora-user-images/image-20230408211459646.png)
+![浏览器展示html文件的过程](./html.png)
 
 1. HTML内容被HTML解析器解析生成DOM树
 
