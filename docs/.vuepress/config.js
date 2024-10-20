@@ -227,6 +227,19 @@ module.exports = {
         text: "Webpack",
         link: "/webpack/01",
       },
+      {
+        text: "webgis",
+        items: [
+          {
+            text: "Openlayers",
+            link: "/webgis/openlayers",
+          },
+          {
+            text: "Cesium",
+            link: "/webgis/cesium",
+          },
+        ],
+      },
       // { text: 'Nest', link: 'https://docs.nestjs.cn/8/firststeps'}
     ],
   },
