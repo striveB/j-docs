@@ -16,5 +16,5 @@ head: [
 ---
 
 ::: slot footer
-Copyright © 2021/3/23-present [个人主页](http://junjunjun.top)
+Copyright © 2021/3/23-present
 :::
