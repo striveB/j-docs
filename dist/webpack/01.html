@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>wepack基本使用 | 📘 远俊的知识库</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    <link rel="icon" href="./public/images/book-alt.svg">
+    <meta name="description" content="🔥立志成为一名优秀的前端开发工程师！">
+    
+    <link rel="preload" href="/assets/css/0.styles.a43a8b00.css" as="style"><link rel="preload" href="/assets/js/app.53769578.js" as="script"><link rel="preload" href="/assets/js/2.2eda075d.js" as="script"><link rel="preload" href="/assets/js/1.e16b5851.js" as="script"><link rel="preload" href="/assets/js/77.000073f2.js" as="script"><link rel="prefetch" href="/assets/js/10.5051d553.js"><link rel="prefetch" href="/assets/js/11.0a1e4bc8.js"><link rel="prefetch" href="/assets/js/12.18b303a0.js"><link rel="prefetch" href="/assets/js/13.d12bcfa7.js"><link rel="prefetch" href="/assets/js/14.3d0fedcb.js"><link rel="prefetch" href="/assets/js/15.5a13c2ac.js"><link rel="prefetch" href="/assets/js/16.4275cd7b.js"><link rel="prefetch" href="/assets/js/17.266967f4.js"><link rel="prefetch" href="/assets/js/18.1c82add4.js"><link rel="prefetch" href="/assets/js/19.91a4d46a.js"><link rel="prefetch" href="/assets/js/20.83917d59.js"><link rel="prefetch" href="/assets/js/21.bddc81bb.js"><link rel="prefetch" href="/assets/js/22.45473c93.js"><link rel="prefetch" href="/assets/js/23.68c7e4f0.js"><link rel="prefetch" href="/assets/js/24.8fe9b36f.js"><link rel="prefetch" href="/assets/js/25.618d9708.js"><link rel="prefetch" href="/assets/js/26.d6427799.js"><link rel="prefetch" href="/assets/js/27.168c36b8.js"><link rel="prefetch" href="/assets/js/28.c8b45add.js"><link rel="prefetch" href="/assets/js/29.6c5c82ab.js"><link rel="prefetch" href="/assets/js/3.9adcf1b2.js"><link rel="prefetch" href="/assets/js/30.ddf7fbe4.js"><link rel="prefetch" href="/assets/js/31.80ae3b7f.js"><link rel="prefetch" href="/assets/js/32.4379452b.js"><link rel="prefetch" href="/assets/js/33.a90d4138.js"><link rel="prefetch" href="/assets/js/34.36f75a1c.js"><link rel="prefetch" href="/assets/js/35.61174bb4.js"><link rel="prefetch" href="/assets/js/36.091ee29e.js"><link rel="prefetch" href="/assets/js/37.4efcfdaf.js"><link rel="prefetch" href="/assets/js/38.d0bf4e7f.js"><link rel="prefetch" href="/assets/js/39.ec3b0837.js"><link rel="prefetch" href="/assets/js/4.e3ae7354.js"><link rel="prefetch" href="/assets/js/40.0a6216bb.js"><link rel="prefetch" href="/assets/js/41.c7461ad4.js"><link rel="prefetch" href="/assets/js/42.f560903d.js"><link rel="prefetch" href="/assets/js/43.ce21f119.js"><link rel="prefetch" href="/assets/js/44.eb656253.js"><link rel="prefetch" href="/assets/js/45.501b7184.js"><link rel="prefetch" href="/assets/js/46.2b4fe8e6.js"><link rel="prefetch" href="/assets/js/47.e0da4f90.js"><link rel="prefetch" href="/assets/js/48.48b1df7b.js"><link rel="prefetch" href="/assets/js/49.254168ff.js"><link rel="prefetch" href="/assets/js/5.61605cfe.js"><link rel="prefetch" href="/assets/js/50.68b6ac71.js"><link rel="prefetch" href="/assets/js/51.467c807c.js"><link rel="prefetch" href="/assets/js/52.7fe565b0.js"><link rel="prefetch" href="/assets/js/53.24848b44.js"><link rel="prefetch" href="/assets/js/54.9d9a7739.js"><link rel="prefetch" href="/assets/js/55.d4f3d83f.js"><link rel="prefetch" href="/assets/js/56.6d22f876.js"><link rel="prefetch" href="/assets/js/57.dae1ecfc.js"><link rel="prefetch" href="/assets/js/58.25c524f7.js"><link rel="prefetch" href="/assets/js/59.47d0d2ea.js"><link rel="prefetch" href="/assets/js/6.337d38c4.js"><link rel="prefetch" href="/assets/js/60.677dc5dd.js"><link rel="prefetch" href="/assets/js/61.43dc2871.js"><link rel="prefetch" href="/assets/js/62.de7f45c7.js"><link rel="prefetch" href="/assets/js/63.89531ab8.js"><link rel="prefetch" href="/assets/js/64.877e0ba9.js"><link rel="prefetch" href="/assets/js/65.c53ad1b8.js"><link rel="prefetch" href="/assets/js/66.4bdf2466.js"><link rel="prefetch" href="/assets/js/67.33159015.js"><link rel="prefetch" href="/assets/js/68.e286ca28.js"><link rel="prefetch" href="/assets/js/69.d23a2f6d.js"><link rel="prefetch" href="/assets/js/7.a96cb84d.js"><link rel="prefetch" href="/assets/js/70.0036f0bb.js"><link rel="prefetch" href="/assets/js/71.39a7e62c.js"><link rel="prefetch" href="/assets/js/72.46864d8c.js"><link rel="prefetch" href="/assets/js/73.38a25d2d.js"><link rel="prefetch" href="/assets/js/74.622b9e3f.js"><link rel="prefetch" href="/assets/js/75.6aa35ff0.js"><link rel="prefetch" href="/assets/js/76.d493c2e7.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.8ee43d73.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.a43a8b00.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">📘 远俊的知识库</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  🏡
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="面试题" class="dropdown-title"><span class="title">面试题</span> <span class="arrow down"></span></button> <button type="button" aria-label="面试题" class="mobile-dropdown-title"><span class="title">面试题</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/interview/js.html" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/interview/vue.html" class="nav-link">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/interview/browser.html" class="nav-link">
+  浏览器
+</a></li><li class="dropdown-item"><!----> <a href="/interview/code.html" class="nav-link">
+  代码实现
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Vue" class="dropdown-title"><span class="title">Vue</span> <span class="arrow down"></span></button> <button type="button" aria-label="Vue" class="mobile-dropdown-title"><span class="title">Vue</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          vue全家桶
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vue/api/base/1.html" class="nav-link">
+  vue
+</a></li><li class="dropdown-subitem"><a href="/vue/vueRouter/01.html" class="nav-link">
+  vue-router
+</a></li><li class="dropdown-subitem"><a href="/vue/vuex/01.html" class="nav-link">
+  vuex
+</a></li></ul></li><li class="dropdown-item"><h4>
+          vue原理
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vue/theory/reactive/01.html" class="nav-link">
+  vue3响应式原理
+</a></li><li class="dropdown-subitem"><a href="/vue/theory/reader/reader.html" class="nav-link">
+  渲染函数
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="CSS" class="dropdown-title"><span class="title">CSS</span> <span class="arrow down"></span></button> <button type="button" aria-label="CSS" class="mobile-dropdown-title"><span class="title">CSS</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/css/animation/01.html" class="nav-link">
+  动画
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="JavaScript" class="dropdown-title"><span class="title">JavaScript</span> <span class="arrow down"></span></button> <button type="button" aria-label="JavaScript" class="mobile-dropdown-title"><span class="title">JavaScript</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          积累
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/javaScript/usejs/icuFun.html" class="nav-link">
+  js常用方法
+</a></li><li class="dropdown-subitem"><a href="/javaScript/usejs/skill.html" class="nav-link">
+  功能案例
+</a></li></ul></li><li class="dropdown-item"><h4>
+          读书
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/javaScript/v4/01.html" class="nav-link">
+  JavaScript高级程序（第四版）
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="TypeScript" class="dropdown-title"><span class="title">TypeScript</span> <span class="arrow down"></span></button> <button type="button" aria-label="TypeScript" class="mobile-dropdown-title"><span class="title">TypeScript</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          读书
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/typeScript/study/01.html" class="nav-link">
+  TypeScript入门教程
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Node" class="dropdown-title"><span class="title">Node</span> <span class="arrow down"></span></button> <button type="button" aria-label="Node" class="mobile-dropdown-title"><span class="title">Node</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/node/base/01.html" class="nav-link">
+  Node.js 基础
+</a></li><li class="dropdown-item"><!----> <a href="/node/express/01.html" class="nav-link">
+  Express
+</a></li></ul></div></div><div class="nav-item"><a href="/webpack/01.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  Webpack
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="webgis" class="dropdown-title"><span class="title">webgis</span> <span class="arrow down"></span></button> <button type="button" aria-label="webgis" class="mobile-dropdown-title"><span class="title">webgis</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/webgis/openlayers.html" class="nav-link">
+  Openlayers
+</a></li><li class="dropdown-item"><!----> <a href="/webgis/cesium.html" class="nav-link">
+  Cesium
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  🏡
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="面试题" class="dropdown-title"><span class="title">面试题</span> <span class="arrow down"></span></button> <button type="button" aria-label="面试题" class="mobile-dropdown-title"><span class="title">面试题</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/interview/js.html" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/interview/vue.html" class="nav-link">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/interview/browser.html" class="nav-link">
+  浏览器
+</a></li><li class="dropdown-item"><!----> <a href="/interview/code.html" class="nav-link">
+  代码实现
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Vue" class="dropdown-title"><span class="title">Vue</span> <span class="arrow down"></span></button> <button type="button" aria-label="Vue" class="mobile-dropdown-title"><span class="title">Vue</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          vue全家桶
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vue/api/base/1.html" class="nav-link">
+  vue
+</a></li><li class="dropdown-subitem"><a href="/vue/vueRouter/01.html" class="nav-link">
+  vue-router
+</a></li><li class="dropdown-subitem"><a href="/vue/vuex/01.html" class="nav-link">
+  vuex
+</a></li></ul></li><li class="dropdown-item"><h4>
+          vue原理
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vue/theory/reactive/01.html" class="nav-link">
+  vue3响应式原理
+</a></li><li class="dropdown-subitem"><a href="/vue/theory/reader/reader.html" class="nav-link">
+  渲染函数
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="CSS" class="dropdown-title"><span class="title">CSS</span> <span class="arrow down"></span></button> <button type="button" aria-label="CSS" class="mobile-dropdown-title"><span class="title">CSS</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/css/animation/01.html" class="nav-link">
+  动画
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="JavaScript" class="dropdown-title"><span class="title">JavaScript</span> <span class="arrow down"></span></button> <button type="button" aria-label="JavaScript" class="mobile-dropdown-title"><span class="title">JavaScript</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          积累
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/javaScript/usejs/icuFun.html" class="nav-link">
+  js常用方法
+</a></li><li class="dropdown-subitem"><a href="/javaScript/usejs/skill.html" class="nav-link">
+  功能案例
+</a></li></ul></li><li class="dropdown-item"><h4>
+          读书
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/javaScript/v4/01.html" class="nav-link">
+  JavaScript高级程序（第四版）
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="TypeScript" class="dropdown-title"><span class="title">TypeScript</span> <span class="arrow down"></span></button> <button type="button" aria-label="TypeScript" class="mobile-dropdown-title"><span class="title">TypeScript</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          读书
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/typeScript/study/01.html" class="nav-link">
+  TypeScript入门教程
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Node" class="dropdown-title"><span class="title">Node</span> <span class="arrow down"></span></button> <button type="button" aria-label="Node" class="mobile-dropdown-title"><span class="title">Node</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/node/base/01.html" class="nav-link">
+  Node.js 基础
+</a></li><li class="dropdown-item"><!----> <a href="/node/express/01.html" class="nav-link">
+  Express
+</a></li></ul></div></div><div class="nav-item"><a href="/webpack/01.html" aria-current="page" class="nav-link router-link-exact-active router-link-active">
+  Webpack
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="webgis" class="dropdown-title"><span class="title">webgis</span> <span class="arrow down"></span></button> <button type="button" aria-label="webgis" class="mobile-dropdown-title"><span class="title">webgis</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/webgis/openlayers.html" class="nav-link">
+  Openlayers
+</a></li><li class="dropdown-item"><!----> <a href="/webgis/cesium.html" class="nav-link">
+  Cesium
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>webpack</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><section class="sidebar-group collapsable is-sub-group depth-1"><p class="sidebar-heading open"><span>基本使用</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/webpack/01.html" aria-current="page" class="active sidebar-link">wepack基本使用</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/webpack/01.html#一、初始项目" class="sidebar-link">一、初始项目</a></li><li class="sidebar-sub-header"><a href="/webpack/01.html#二、安装webpack" class="sidebar-link">二、安装webpack</a></li><li class="sidebar-sub-header"><a href="/webpack/01.html#三、创建必要目录" class="sidebar-link">三、创建必要目录</a></li><li class="sidebar-sub-header"><a href="/webpack/01.html#四、创建配置文件" class="sidebar-link">四、创建配置文件</a></li><li class="sidebar-sub-header"><a href="/webpack/01.html#五、引入打包后的文件" class="sidebar-link">五、引入打包后的文件</a></li><li class="sidebar-sub-header"><a href="/webpack/01.html#六、配置脚本" class="sidebar-link">六、配置脚本</a></li></ul></li></ul></section></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="wepack基本使用"><a href="#wepack基本使用" class="header-anchor">#</a> wepack基本使用</h1> <h2 id="一、初始项目"><a href="#一、初始项目" class="header-anchor">#</a> 一、初始项目</h2> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">mkdir</span> basic-webpack <span class="token operator">&amp;</span> <span class="token builtin class-name">cd</span> basic-webpack
+<span class="token function">npm</span> init -y<span class="token punctuation">;</span> <span class="token comment"># y全面选项按照默认配置直接勾选</span>
+</code></pre></div><p><strong>目录结构：</strong></p> <div class="language- extra-class"><pre class="language-text"><code>basic-webpack
+|- package.json
+</code></pre></div><h2 id="二、安装webpack"><a href="#二、安装webpack" class="header-anchor">#</a> 二、安装webpack</h2> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">npm</span> <span class="token function">install</span> webpack webpack-cli webpack-dev-server <span class="token parameter variable">-D</span>
+</code></pre></div><p><code>webpack-cli</code>：webpack的命令工具</p> <p><code>webpack-dev-server</code>：可以创建一个本地服务</p> <p><strong>目录结构：</strong></p> <div class="language- extra-class"><pre class="language-text"><code>basic-webpack
+|- node_modules
+|- package.json
+</code></pre></div><h2 id="三、创建必要目录"><a href="#三、创建必要目录" class="header-anchor">#</a> 三、创建必要目录</h2> <p><code>dist</code>：webpack打包后的文件位置</p> <p>|- <code>index.html</code>：项目启动时的页面</p> <p><code>src</code>：项目所有代码在src中编写</p> <p>|- <code>main.js</code> 项目的主入口，如果不写配置文件入口文件默认是 <code>index.js</code></p> <p><strong>目录结构：</strong></p> <div class="language- extra-class"><pre class="language-text"><code>basic-webpack
+|- dist
+|  |- index.html
+|- node_modules
+|- src
+|  |- main.js
+|- package.json
+</code></pre></div><h2 id="四、创建配置文件"><a href="#四、创建配置文件" class="header-anchor">#</a> 四、创建配置文件</h2> <p>在项目根目录创建 <code>webpack.config.js</code></p> <p><strong>文件内容</strong></p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">const</span> path <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'path'</span><span class="token punctuation">)</span>
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token literal-property property">entry</span><span class="token operator">:</span> <span class="token string">'./src/main.js'</span><span class="token punctuation">,</span> <span class="token comment">// 入口文件</span>
+    <span class="token literal-property property">output</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token literal-property property">path</span><span class="token operator">:</span> path<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span>__dirname<span class="token punctuation">,</span> <span class="token string">'dist'</span><span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token comment">// 打包后的位置（绝对路径）</span>
+        <span class="token literal-property property">filename</span><span class="token operator">:</span> <span class="token string">'bundle.js'</span><span class="token punctuation">,</span><span class="token comment">// 打包后的文件名</span>
+        <span class="token literal-property property">clean</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span><span class="token comment">// 打包后清除之前的打包文件</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token literal-property property">devServer</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token keyword">static</span><span class="token operator">:</span> <span class="token string">'./dist/'</span><span class="token punctuation">,</span><span class="token comment">// 服务需要管理的静态文件位置</span>
+        <span class="token literal-property property">open</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span><span class="token comment">// 项目启动后默认打开浏览器</span>
+        <span class="token literal-property property">port</span><span class="token operator">:</span> <span class="token number">8080</span><span class="token punctuation">,</span><span class="token comment">// 服务的端口号</span>
+   
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><div class="custom-block warning"><p class="custom-block-title">WARNING</p> <p>文件名（webpack.config.js）一定不能写错</p></div> <h2 id="五、引入打包后的文件"><a href="#五、引入打包后的文件" class="header-anchor">#</a> 五、引入打包后的文件</h2> <p>使用打包后的文件还需要再 <code>dist/index.html</code> 中通过<code>script</code>标签引入</p> <div class="language-html extra-class"><pre class="language-html"><code><span class="token doctype"><span class="token punctuation">&lt;!</span><span class="token doctype-tag">DOCTYPE</span> <span class="token name">html</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>en<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>UTF-8<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">http-equiv</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>X-UA-Compatible<span class="token punctuation">&quot;</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>IE=edge<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>viewport<span class="token punctuation">&quot;</span></span> <span class="token attr-name">content</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>width=device-width, initial-scale=1.0<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">&gt;</span></span>Document<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
+    <span class="token comment">&lt;!-- 这里的文件名和配置文件中的 打包后的文件名一致 --&gt;</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>./bundle.js<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><h2 id="六、配置脚本"><a href="#六、配置脚本" class="header-anchor">#</a> 六、配置脚本</h2> <p>在<code>package.json</code>中配置webpack命令</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;scripts&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;serve&quot;</span><span class="token operator">:</span> <span class="token string">&quot;webpack server --mode=development&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;build&quot;</span><span class="token operator">:</span> <span class="token string">&quot;webpack --mode=production&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p><strong>之后我们通过：</strong></p> <p><code>npm run serve</code>：启动服务</p> <p><code>npm run build</code>：项目打包</p></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.53769578.js" defer></script><script src="/assets/js/2.2eda075d.js" defer></script><script src="/assets/js/1.e16b5851.js" defer></script><script src="/assets/js/77.000073f2.js" defer></script>
+  </body>
+</html>

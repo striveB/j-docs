@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>第二章 - script标签 | 📘 远俊的知识库</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    <link rel="icon" href="./public/images/book-alt.svg">
+    <meta name="description" content="🔥立志成为一名优秀的前端开发工程师！">
+    
+    <link rel="preload" href="/assets/css/0.styles.a43a8b00.css" as="style"><link rel="preload" href="/assets/js/app.53769578.js" as="script"><link rel="preload" href="/assets/js/2.2eda075d.js" as="script"><link rel="preload" href="/assets/js/1.e16b5851.js" as="script"><link rel="preload" href="/assets/js/37.4efcfdaf.js" as="script"><link rel="prefetch" href="/assets/js/10.5051d553.js"><link rel="prefetch" href="/assets/js/11.0a1e4bc8.js"><link rel="prefetch" href="/assets/js/12.18b303a0.js"><link rel="prefetch" href="/assets/js/13.d12bcfa7.js"><link rel="prefetch" href="/assets/js/14.3d0fedcb.js"><link rel="prefetch" href="/assets/js/15.5a13c2ac.js"><link rel="prefetch" href="/assets/js/16.4275cd7b.js"><link rel="prefetch" href="/assets/js/17.266967f4.js"><link rel="prefetch" href="/assets/js/18.1c82add4.js"><link rel="prefetch" href="/assets/js/19.91a4d46a.js"><link rel="prefetch" href="/assets/js/20.83917d59.js"><link rel="prefetch" href="/assets/js/21.bddc81bb.js"><link rel="prefetch" href="/assets/js/22.45473c93.js"><link rel="prefetch" href="/assets/js/23.68c7e4f0.js"><link rel="prefetch" href="/assets/js/24.8fe9b36f.js"><link rel="prefetch" href="/assets/js/25.618d9708.js"><link rel="prefetch" href="/assets/js/26.d6427799.js"><link rel="prefetch" href="/assets/js/27.168c36b8.js"><link rel="prefetch" href="/assets/js/28.c8b45add.js"><link rel="prefetch" href="/assets/js/29.6c5c82ab.js"><link rel="prefetch" href="/assets/js/3.9adcf1b2.js"><link rel="prefetch" href="/assets/js/30.ddf7fbe4.js"><link rel="prefetch" href="/assets/js/31.80ae3b7f.js"><link rel="prefetch" href="/assets/js/32.4379452b.js"><link rel="prefetch" href="/assets/js/33.a90d4138.js"><link rel="prefetch" href="/assets/js/34.36f75a1c.js"><link rel="prefetch" href="/assets/js/35.61174bb4.js"><link rel="prefetch" href="/assets/js/36.091ee29e.js"><link rel="prefetch" href="/assets/js/38.d0bf4e7f.js"><link rel="prefetch" href="/assets/js/39.ec3b0837.js"><link rel="prefetch" href="/assets/js/4.e3ae7354.js"><link rel="prefetch" href="/assets/js/40.0a6216bb.js"><link rel="prefetch" href="/assets/js/41.c7461ad4.js"><link rel="prefetch" href="/assets/js/42.f560903d.js"><link rel="prefetch" href="/assets/js/43.ce21f119.js"><link rel="prefetch" href="/assets/js/44.eb656253.js"><link rel="prefetch" href="/assets/js/45.501b7184.js"><link rel="prefetch" href="/assets/js/46.2b4fe8e6.js"><link rel="prefetch" href="/assets/js/47.e0da4f90.js"><link rel="prefetch" href="/assets/js/48.48b1df7b.js"><link rel="prefetch" href="/assets/js/49.254168ff.js"><link rel="prefetch" href="/assets/js/5.61605cfe.js"><link rel="prefetch" href="/assets/js/50.68b6ac71.js"><link rel="prefetch" href="/assets/js/51.467c807c.js"><link rel="prefetch" href="/assets/js/52.7fe565b0.js"><link rel="prefetch" href="/assets/js/53.24848b44.js"><link rel="prefetch" href="/assets/js/54.9d9a7739.js"><link rel="prefetch" href="/assets/js/55.d4f3d83f.js"><link rel="prefetch" href="/assets/js/56.6d22f876.js"><link rel="prefetch" href="/assets/js/57.dae1ecfc.js"><link rel="prefetch" href="/assets/js/58.25c524f7.js"><link rel="prefetch" href="/assets/js/59.47d0d2ea.js"><link rel="prefetch" href="/assets/js/6.337d38c4.js"><link rel="prefetch" href="/assets/js/60.677dc5dd.js"><link rel="prefetch" href="/assets/js/61.43dc2871.js"><link rel="prefetch" href="/assets/js/62.de7f45c7.js"><link rel="prefetch" href="/assets/js/63.89531ab8.js"><link rel="prefetch" href="/assets/js/64.877e0ba9.js"><link rel="prefetch" href="/assets/js/65.c53ad1b8.js"><link rel="prefetch" href="/assets/js/66.4bdf2466.js"><link rel="prefetch" href="/assets/js/67.33159015.js"><link rel="prefetch" href="/assets/js/68.e286ca28.js"><link rel="prefetch" href="/assets/js/69.d23a2f6d.js"><link rel="prefetch" href="/assets/js/7.a96cb84d.js"><link rel="prefetch" href="/assets/js/70.0036f0bb.js"><link rel="prefetch" href="/assets/js/71.39a7e62c.js"><link rel="prefetch" href="/assets/js/72.46864d8c.js"><link rel="prefetch" href="/assets/js/73.38a25d2d.js"><link rel="prefetch" href="/assets/js/74.622b9e3f.js"><link rel="prefetch" href="/assets/js/75.6aa35ff0.js"><link rel="prefetch" href="/assets/js/76.d493c2e7.js"><link rel="prefetch" href="/assets/js/77.000073f2.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.8ee43d73.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.a43a8b00.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">📘 远俊的知识库</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  🏡
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="面试题" class="dropdown-title"><span class="title">面试题</span> <span class="arrow down"></span></button> <button type="button" aria-label="面试题" class="mobile-dropdown-title"><span class="title">面试题</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/interview/js.html" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/interview/vue.html" class="nav-link">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/interview/browser.html" class="nav-link">
+  浏览器
+</a></li><li class="dropdown-item"><!----> <a href="/interview/code.html" class="nav-link">
+  代码实现
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Vue" class="dropdown-title"><span class="title">Vue</span> <span class="arrow down"></span></button> <button type="button" aria-label="Vue" class="mobile-dropdown-title"><span class="title">Vue</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          vue全家桶
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vue/api/base/1.html" class="nav-link">
+  vue
+</a></li><li class="dropdown-subitem"><a href="/vue/vueRouter/01.html" class="nav-link">
+  vue-router
+</a></li><li class="dropdown-subitem"><a href="/vue/vuex/01.html" class="nav-link">
+  vuex
+</a></li></ul></li><li class="dropdown-item"><h4>
+          vue原理
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vue/theory/reactive/01.html" class="nav-link">
+  vue3响应式原理
+</a></li><li class="dropdown-subitem"><a href="/vue/theory/reader/reader.html" class="nav-link">
+  渲染函数
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="CSS" class="dropdown-title"><span class="title">CSS</span> <span class="arrow down"></span></button> <button type="button" aria-label="CSS" class="mobile-dropdown-title"><span class="title">CSS</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/css/animation/01.html" class="nav-link">
+  动画
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="JavaScript" class="dropdown-title"><span class="title">JavaScript</span> <span class="arrow down"></span></button> <button type="button" aria-label="JavaScript" class="mobile-dropdown-title"><span class="title">JavaScript</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          积累
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/javaScript/usejs/icuFun.html" class="nav-link">
+  js常用方法
+</a></li><li class="dropdown-subitem"><a href="/javaScript/usejs/skill.html" class="nav-link">
+  功能案例
+</a></li></ul></li><li class="dropdown-item"><h4>
+          读书
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/javaScript/v4/01.html" class="nav-link">
+  JavaScript高级程序（第四版）
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="TypeScript" class="dropdown-title"><span class="title">TypeScript</span> <span class="arrow down"></span></button> <button type="button" aria-label="TypeScript" class="mobile-dropdown-title"><span class="title">TypeScript</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          读书
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/typeScript/study/01.html" class="nav-link">
+  TypeScript入门教程
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Node" class="dropdown-title"><span class="title">Node</span> <span class="arrow down"></span></button> <button type="button" aria-label="Node" class="mobile-dropdown-title"><span class="title">Node</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/node/base/01.html" class="nav-link">
+  Node.js 基础
+</a></li><li class="dropdown-item"><!----> <a href="/node/express/01.html" class="nav-link">
+  Express
+</a></li></ul></div></div><div class="nav-item"><a href="/webpack/01.html" class="nav-link">
+  Webpack
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="webgis" class="dropdown-title"><span class="title">webgis</span> <span class="arrow down"></span></button> <button type="button" aria-label="webgis" class="mobile-dropdown-title"><span class="title">webgis</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/webgis/openlayers.html" class="nav-link">
+  Openlayers
+</a></li><li class="dropdown-item"><!----> <a href="/webgis/cesium.html" class="nav-link">
+  Cesium
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  🏡
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="面试题" class="dropdown-title"><span class="title">面试题</span> <span class="arrow down"></span></button> <button type="button" aria-label="面试题" class="mobile-dropdown-title"><span class="title">面试题</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/interview/js.html" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/interview/vue.html" class="nav-link">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/interview/browser.html" class="nav-link">
+  浏览器
+</a></li><li class="dropdown-item"><!----> <a href="/interview/code.html" class="nav-link">
+  代码实现
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Vue" class="dropdown-title"><span class="title">Vue</span> <span class="arrow down"></span></button> <button type="button" aria-label="Vue" class="mobile-dropdown-title"><span class="title">Vue</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          vue全家桶
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vue/api/base/1.html" class="nav-link">
+  vue
+</a></li><li class="dropdown-subitem"><a href="/vue/vueRouter/01.html" class="nav-link">
+  vue-router
+</a></li><li class="dropdown-subitem"><a href="/vue/vuex/01.html" class="nav-link">
+  vuex
+</a></li></ul></li><li class="dropdown-item"><h4>
+          vue原理
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vue/theory/reactive/01.html" class="nav-link">
+  vue3响应式原理
+</a></li><li class="dropdown-subitem"><a href="/vue/theory/reader/reader.html" class="nav-link">
+  渲染函数
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="CSS" class="dropdown-title"><span class="title">CSS</span> <span class="arrow down"></span></button> <button type="button" aria-label="CSS" class="mobile-dropdown-title"><span class="title">CSS</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/css/animation/01.html" class="nav-link">
+  动画
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="JavaScript" class="dropdown-title"><span class="title">JavaScript</span> <span class="arrow down"></span></button> <button type="button" aria-label="JavaScript" class="mobile-dropdown-title"><span class="title">JavaScript</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          积累
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/javaScript/usejs/icuFun.html" class="nav-link">
+  js常用方法
+</a></li><li class="dropdown-subitem"><a href="/javaScript/usejs/skill.html" class="nav-link">
+  功能案例
+</a></li></ul></li><li class="dropdown-item"><h4>
+          读书
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/javaScript/v4/01.html" class="nav-link">
+  JavaScript高级程序（第四版）
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="TypeScript" class="dropdown-title"><span class="title">TypeScript</span> <span class="arrow down"></span></button> <button type="button" aria-label="TypeScript" class="mobile-dropdown-title"><span class="title">TypeScript</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          读书
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/typeScript/study/01.html" class="nav-link">
+  TypeScript入门教程
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Node" class="dropdown-title"><span class="title">Node</span> <span class="arrow down"></span></button> <button type="button" aria-label="Node" class="mobile-dropdown-title"><span class="title">Node</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/node/base/01.html" class="nav-link">
+  Node.js 基础
+</a></li><li class="dropdown-item"><!----> <a href="/node/express/01.html" class="nav-link">
+  Express
+</a></li></ul></div></div><div class="nav-item"><a href="/webpack/01.html" class="nav-link">
+  Webpack
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="webgis" class="dropdown-title"><span class="title">webgis</span> <span class="arrow down"></span></button> <button type="button" aria-label="webgis" class="mobile-dropdown-title"><span class="title">webgis</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/webgis/openlayers.html" class="nav-link">
+  Openlayers
+</a></li><li class="dropdown-item"><!----> <a href="/webgis/cesium.html" class="nav-link">
+  Cesium
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>javaScript高级程序设计（第四版）</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/javaScript/v4/01.html" class="sidebar-link">第一章 - 什么是js</a></li><li><a href="/javaScript/v4/02.html" aria-current="page" class="active sidebar-link">第二章 - script标签</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/javaScript/v4/02.html#_2-1-script标签" class="sidebar-link">2.1 script标签</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/javaScript/v4/02.html#_2-1-1-在script中的八个属性" class="sidebar-link">2.1.1 在script中的八个属性</a></li><li class="sidebar-sub-header"><a href="/javaScript/v4/02.html#_2-1-2-使用script标签的两种方式" class="sidebar-link">2.1.2 使用script标签的两种方式</a></li><li class="sidebar-sub-header"><a href="/javaScript/v4/02.html#_2-1-3-标签的位置" class="sidebar-link">2.1.3 标签的位置</a></li></ul></li></ul></li><li><a href="/javaScript/v4/03.html" class="sidebar-link">第三章 - 变量、数据类型、控制语句、函数</a></li><li><a href="/javaScript/v4/04.html" class="sidebar-link">第四章 - 变量、作用域与内存</a></li><li><a href="/javaScript/v4/05.html" class="sidebar-link">第五章 - 基本引用类型</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="第二章-script标签"><a href="#第二章-script标签" class="header-anchor">#</a> 第二章 - script标签</h1> <h2 id="_2-1-script标签"><a href="#_2-1-script标签" class="header-anchor">#</a> 2.1 script标签</h2> <blockquote><p>将 JavaScript 插入 HTML 的主要方法是使用<code>script</code>标签。这个元素是由网景公司创造出来，并最早在 Netscape Navigator 2 中实现的。后来，这个元素被正式加入到 HTML 规范。</p></blockquote> <h3 id="_2-1-1-在script中的八个属性"><a href="#_2-1-1-在script中的八个属性" class="header-anchor">#</a> 2.1.1 在script中的八个属性</h3> <table><thead><tr><th style="text-align:center;">属性</th> <th style="text-align:center;">必填</th> <th>说明</th></tr></thead> <tbody><tr><td style="text-align:center;"><strong>async</strong></td> <td style="text-align:center;">否</td> <td>表示因该立即开始下载脚本，但不能阻止其他页面动作，比如下载资源或等待其他脚本。只对外部脚本文件有效。</td></tr> <tr><td style="text-align:center;"><em>charset</em></td> <td style="text-align:center;">否</td> <td>使用 src 属性指定的代码字符集。这个属性很少使用，因为大多数浏览器不在乎它的值。</td></tr> <tr><td style="text-align:center;"><strong>crossorigin</strong></td> <td style="text-align:center;">否</td> <td>配置相关请求的CORS（开与资源共享）设置。默认不使用CORS。<code>crissorigin=&quot;anonymous&quot;</code> 配置文件请求不必设置凭据标志。<code>crossorigin=&quot;use-credentials&quot;</code> 设置凭据标致，意味着出站请求回包含凭据。</td></tr> <tr><td style="text-align:center;"><strong>defer</strong></td> <td style="text-align:center;">否</td> <td>表示脚本可以延迟到文档完全被解析和显示之后再执行。只对外部脚本文件有效。在 IE7 及更早的版本中，对行内脚本也可以指定这个属性。</td></tr> <tr><td style="text-align:center;"><strong>integrity</strong></td> <td style="text-align:center;">否</td> <td>允许比对接收到的资源和指定的加密签名以验证子资源完整性（SRI，Subresource Integrity）。如果接收到的资源的签名与这个属性指定的签名不匹配，则页面会报错，脚本不会执行。这个属性可以用于确保内容分发网络（CDN，Content Delivery Network）不会提供恶意内容。</td></tr> <tr><td style="text-align:center;"><em>language</em></td> <td style="text-align:center;">废弃</td> <td>最初用于表示代码块中的脚本语言（如&quot;JavaScript&quot;、&quot;JavaScript 1.2&quot;或&quot;VBScript&quot;）。大多数浏览器都会忽略这个属性，不应该再使用它。</td></tr> <tr><td style="text-align:center;"><strong>src</strong></td> <td style="text-align:center;">否</td> <td>表示包含要执行的代码的外部文件。</td></tr> <tr><td style="text-align:center;">type</td> <td style="text-align:center;">否</td> <td>代替 <strong>language</strong>，表示代码块中脚本语言的内容类型（也称 MIME 类型）。按照惯例，这个值始终都是&quot;text/javascript&quot;，尽管<code>text/javascript</code>和<code>text/ecmascript</code>都已经废弃了。JavaScript 文件的 MIME 类型通常是<code>application/x-javascript</code>，不过给type 属性这个值有可能导致脚本被忽略。在非 IE 的浏览器中有效的其他值还有<code>application/javascript</code>和<code>application/ecmascript</code>。<strong>如果这个值是 module，则代码会被当成 ES6 模块，而且只有这时候代码中才能出现 import 和 export 关键字。</strong></td></tr></tbody></table> <h3 id="_2-1-2-使用script标签的两种方式"><a href="#_2-1-2-使用script标签的两种方式" class="header-anchor">#</a> 2.1.2 使用script标签的两种方式</h3> <p><strong>方式1：</strong></p> <blockquote><p>直接在script标签中编写代码</p></blockquote> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token operator">&lt;</span>script<span class="token operator">&gt;</span> 
+ <span class="token keyword">function</span> <span class="token function">sayHi</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span> 
+     console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">&quot;Hi!&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 
+ <span class="token punctuation">}</span>    
+<span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">&gt;</span> 
+</code></pre></div><p>包含在<code>script</code>内的代码会被<strong>从上到下解释</strong>。在上面的例子中，被解释的是一个函数定义，并且该函数会被保存在解释器环境中。<strong>在<code>script</code>元素中的代码被计算完成之前，页面的其余内容不会被加载，也不会被显示。</strong></p> <p><strong>方式2：</strong></p> <blockquote><p>通过<code>src</code>引入js文件</p></blockquote> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token operator">&lt;</span>script src<span class="token operator">=</span><span class="token string">&quot;example.js&quot;</span><span class="token operator">&gt;</span><span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">&gt;</span>
+</code></pre></div><p>与解释行内 JavaScript一样，在解释外部 JavaScript文件时，页面也会阻塞。（阻塞时间也包含下载文件的时间。）在 <code>XHTML</code>文档中，可以忽略结束标签，比如：</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token operator">&lt;</span>script src<span class="token operator">=</span><span class="token string">&quot;example.js&quot;</span><span class="token operator">/</span><span class="token operator">&gt;</span>
+</code></pre></div><p>以上语法不能在 HTML 文件中使用，因为它是无效的 HTML，有些浏览器不能正常处理，比如 IE。</p> <div class="custom-block warning"><p class="custom-block-title">注意</p> <p>按照惯例，外部 JavaScript 文件的扩展名是.js。这不是必需的，因为浏览器不会检查所包含 JavaScript 文件的扩展名。这就为使用服务器端脚本语言动态生成JavaScript 代码，或者在浏览器中将 JavaScript扩展语言（如TypeScript，或React的 JSX）转译为JavaScript提供了可能性。不过要注意，服务器经常会根据文件扩展来确定响应的正确 MIME 类型。如果不打算使用.js 扩展名，一定要确保服务器能返回正确的 MIME 类型。</p></div> <p>另外，使用了<code>src</code>属性的<code>script</code>标签不应该再在<code>&lt;script&gt;&lt;/script&gt;</code>标签中再包含其他<code>JavaScript</code>代码。<strong>如果两者都提供的话，则浏览器只会下载并执行脚本文件，从而忽略行内代码。</strong></p> <p><code>script</code>标签的一个最为强大、同时也备受争议的特性是，它可以包含来自外部域的 JavaScript文件。跟<code>img</code>标签很像，<code>script</code>的 <code>src</code>属性可以是一个完整的 URL，而且这个 URL 指向的资源可以跟包含它的 HTML 页面不在同一个域中，比如这个例子：</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token operator">&lt;</span>script src<span class="token operator">=</span><span class="token string">&quot;http://www.somewhere.com/afile.js&quot;</span><span class="token operator">&gt;</span><span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">&gt;</span>
+</code></pre></div><p>浏览器在解析这个资源时，会向 <code>src</code> 属性指定的路径发送一个 <strong>GET 请求</strong>，以取得相应资源，假定是一个 JavaScript 文件。<strong>这个初始的请求不受浏览器同源策略限制</strong>，但返回并被执行的 JavaScript 则受限制。当然，这个请求仍然受父页面 HTTP/HTTPS 协议的限制。</p> <p>不管包含的是什么代码，浏览器都会按照<code>script</code>在页面中<strong>出现的顺序依次解释</strong>它们，前提是它们没有使用 defer 和 async 属性。第二个<code>script</code>的代码必须在第一个<code>script</code>元素的代码解释完毕才能开始解释，第三个则必须等第二个解释完，以此类推。</p> <h3 id="_2-1-3-标签的位置"><a href="#_2-1-3-标签的位置" class="header-anchor">#</a> 2.1.3 标签的位置</h3> <p>过去，所有<code>script</code>都被放在页面的<code>head</code>标签内，如下面的例子所示：</p> <div class="language-html extra-class"><pre class="language-html"><code><span class="token doctype"><span class="token punctuation">&lt;!</span><span class="token doctype-tag">DOCTYPE</span> <span class="token name">html</span><span class="token punctuation">&gt;</span></span> 
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span><span class="token punctuation">&gt;</span></span> 
+ <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span> 
+ <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">&gt;</span></span>Example HTML Page<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">&gt;</span></span> 
+ <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>example1.js<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span> 
+ <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">&quot;</span>example2.js<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token script"></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span> 
+ <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span> 
+ <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span> 
+ <span class="token comment">&lt;!-- 这里是页面内容 --&gt;</span> 
+ <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span> 
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span> 
+</code></pre></div><p>这种做法的主要目的是把外部的 CSS 和 JavaScript 文件都集中放到一起。不过，把所有 JavaScript文件都放在<code>head</code>里，也就意味着必须把<strong>所有 JavaScript 代码都下载、解析和解释完成后，才能开始渲染页面（页面在浏览器解析到<code>body</code>的起始标签时开始渲染）。对于需要很多 JavaScript 的页面，这会导致页面渲染的明显延迟，在此期间浏览器窗口完全空白</strong>。为解决这个问题，现代 Web 应用程序通常将所有 JavaScript 引用放在<code>body</code>元素中的页面内容后面，如下面的例子所示：</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token operator">&lt;</span><span class="token operator">!</span><span class="token constant">DOCTYPE</span> html<span class="token operator">&gt;</span> 
+<span class="token operator">&lt;</span>html<span class="token operator">&gt;</span> 
+ <span class="token operator">&lt;</span>head<span class="token operator">&gt;</span> 
+ <span class="token operator">&lt;</span>title<span class="token operator">&gt;</span>Example <span class="token constant">HTML</span> Page<span class="token operator">&lt;</span><span class="token operator">/</span>title<span class="token operator">&gt;</span> 
+ <span class="token operator">&lt;</span><span class="token operator">/</span>head<span class="token operator">&gt;</span> 
+ <span class="token operator">&lt;</span>body<span class="token operator">&gt;</span> 
+ <span class="token operator">&lt;</span><span class="token operator">!</span><span class="token operator">--</span> 这里是页面内容 <span class="token operator">--</span><span class="token operator">&gt;</span> 
+ <span class="token operator">&lt;</span>script src<span class="token operator">=</span><span class="token string">&quot;example1.js&quot;</span><span class="token operator">&gt;</span><span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">&gt;</span> 
+ <span class="token operator">&lt;</span>script src<span class="token operator">=</span><span class="token string">&quot;example2.js&quot;</span><span class="token operator">&gt;</span><span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">&gt;</span> 
+ <span class="token operator">&lt;</span><span class="token operator">/</span>body<span class="token operator">&gt;</span> 
+<span class="token operator">&lt;</span><span class="token operator">/</span>html<span class="token operator">&gt;</span> 
+</code></pre></div><p>这样一来，页面会在处理 JavaScript 代码之前完全渲染页面。用户会感觉页面加载更快了，因为浏览器显示空白页面的时间短了。</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/javaScript/v4/01.html" class="prev">
+        第一章 - 什么是js
+      </a></span> <span class="next"><a href="/javaScript/v4/03.html">
+        第三章 - 变量、数据类型、控制语句、函数
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.53769578.js" defer></script><script src="/assets/js/2.2eda075d.js" defer></script><script src="/assets/js/1.e16b5851.js" defer></script><script src="/assets/js/37.4efcfdaf.js" defer></script>
+  </body>
+</html>

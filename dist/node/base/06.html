@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>六、npm与包 | 📘 远俊的知识库</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    <link rel="icon" href="./public/images/book-alt.svg">
+    <meta name="description" content="🔥立志成为一名优秀的前端开发工程师！">
+    
+    <link rel="preload" href="/assets/css/0.styles.a43a8b00.css" as="style"><link rel="preload" href="/assets/js/app.53769578.js" as="script"><link rel="preload" href="/assets/js/2.2eda075d.js" as="script"><link rel="preload" href="/assets/js/1.e16b5851.js" as="script"><link rel="preload" href="/assets/js/46.2b4fe8e6.js" as="script"><link rel="prefetch" href="/assets/js/10.5051d553.js"><link rel="prefetch" href="/assets/js/11.0a1e4bc8.js"><link rel="prefetch" href="/assets/js/12.18b303a0.js"><link rel="prefetch" href="/assets/js/13.d12bcfa7.js"><link rel="prefetch" href="/assets/js/14.3d0fedcb.js"><link rel="prefetch" href="/assets/js/15.5a13c2ac.js"><link rel="prefetch" href="/assets/js/16.4275cd7b.js"><link rel="prefetch" href="/assets/js/17.266967f4.js"><link rel="prefetch" href="/assets/js/18.1c82add4.js"><link rel="prefetch" href="/assets/js/19.91a4d46a.js"><link rel="prefetch" href="/assets/js/20.83917d59.js"><link rel="prefetch" href="/assets/js/21.bddc81bb.js"><link rel="prefetch" href="/assets/js/22.45473c93.js"><link rel="prefetch" href="/assets/js/23.68c7e4f0.js"><link rel="prefetch" href="/assets/js/24.8fe9b36f.js"><link rel="prefetch" href="/assets/js/25.618d9708.js"><link rel="prefetch" href="/assets/js/26.d6427799.js"><link rel="prefetch" href="/assets/js/27.168c36b8.js"><link rel="prefetch" href="/assets/js/28.c8b45add.js"><link rel="prefetch" href="/assets/js/29.6c5c82ab.js"><link rel="prefetch" href="/assets/js/3.9adcf1b2.js"><link rel="prefetch" href="/assets/js/30.ddf7fbe4.js"><link rel="prefetch" href="/assets/js/31.80ae3b7f.js"><link rel="prefetch" href="/assets/js/32.4379452b.js"><link rel="prefetch" href="/assets/js/33.a90d4138.js"><link rel="prefetch" href="/assets/js/34.36f75a1c.js"><link rel="prefetch" href="/assets/js/35.61174bb4.js"><link rel="prefetch" href="/assets/js/36.091ee29e.js"><link rel="prefetch" href="/assets/js/37.4efcfdaf.js"><link rel="prefetch" href="/assets/js/38.d0bf4e7f.js"><link rel="prefetch" href="/assets/js/39.ec3b0837.js"><link rel="prefetch" href="/assets/js/4.e3ae7354.js"><link rel="prefetch" href="/assets/js/40.0a6216bb.js"><link rel="prefetch" href="/assets/js/41.c7461ad4.js"><link rel="prefetch" href="/assets/js/42.f560903d.js"><link rel="prefetch" href="/assets/js/43.ce21f119.js"><link rel="prefetch" href="/assets/js/44.eb656253.js"><link rel="prefetch" href="/assets/js/45.501b7184.js"><link rel="prefetch" href="/assets/js/47.e0da4f90.js"><link rel="prefetch" href="/assets/js/48.48b1df7b.js"><link rel="prefetch" href="/assets/js/49.254168ff.js"><link rel="prefetch" href="/assets/js/5.61605cfe.js"><link rel="prefetch" href="/assets/js/50.68b6ac71.js"><link rel="prefetch" href="/assets/js/51.467c807c.js"><link rel="prefetch" href="/assets/js/52.7fe565b0.js"><link rel="prefetch" href="/assets/js/53.24848b44.js"><link rel="prefetch" href="/assets/js/54.9d9a7739.js"><link rel="prefetch" href="/assets/js/55.d4f3d83f.js"><link rel="prefetch" href="/assets/js/56.6d22f876.js"><link rel="prefetch" href="/assets/js/57.dae1ecfc.js"><link rel="prefetch" href="/assets/js/58.25c524f7.js"><link rel="prefetch" href="/assets/js/59.47d0d2ea.js"><link rel="prefetch" href="/assets/js/6.337d38c4.js"><link rel="prefetch" href="/assets/js/60.677dc5dd.js"><link rel="prefetch" href="/assets/js/61.43dc2871.js"><link rel="prefetch" href="/assets/js/62.de7f45c7.js"><link rel="prefetch" href="/assets/js/63.89531ab8.js"><link rel="prefetch" href="/assets/js/64.877e0ba9.js"><link rel="prefetch" href="/assets/js/65.c53ad1b8.js"><link rel="prefetch" href="/assets/js/66.4bdf2466.js"><link rel="prefetch" href="/assets/js/67.33159015.js"><link rel="prefetch" href="/assets/js/68.e286ca28.js"><link rel="prefetch" href="/assets/js/69.d23a2f6d.js"><link rel="prefetch" href="/assets/js/7.a96cb84d.js"><link rel="prefetch" href="/assets/js/70.0036f0bb.js"><link rel="prefetch" href="/assets/js/71.39a7e62c.js"><link rel="prefetch" href="/assets/js/72.46864d8c.js"><link rel="prefetch" href="/assets/js/73.38a25d2d.js"><link rel="prefetch" href="/assets/js/74.622b9e3f.js"><link rel="prefetch" href="/assets/js/75.6aa35ff0.js"><link rel="prefetch" href="/assets/js/76.d493c2e7.js"><link rel="prefetch" href="/assets/js/77.000073f2.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.8ee43d73.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.a43a8b00.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">📘 远俊的知识库</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  🏡
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="面试题" class="dropdown-title"><span class="title">面试题</span> <span class="arrow down"></span></button> <button type="button" aria-label="面试题" class="mobile-dropdown-title"><span class="title">面试题</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/interview/js.html" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/interview/vue.html" class="nav-link">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/interview/browser.html" class="nav-link">
+  浏览器
+</a></li><li class="dropdown-item"><!----> <a href="/interview/code.html" class="nav-link">
+  代码实现
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Vue" class="dropdown-title"><span class="title">Vue</span> <span class="arrow down"></span></button> <button type="button" aria-label="Vue" class="mobile-dropdown-title"><span class="title">Vue</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          vue全家桶
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vue/api/base/1.html" class="nav-link">
+  vue
+</a></li><li class="dropdown-subitem"><a href="/vue/vueRouter/01.html" class="nav-link">
+  vue-router
+</a></li><li class="dropdown-subitem"><a href="/vue/vuex/01.html" class="nav-link">
+  vuex
+</a></li></ul></li><li class="dropdown-item"><h4>
+          vue原理
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vue/theory/reactive/01.html" class="nav-link">
+  vue3响应式原理
+</a></li><li class="dropdown-subitem"><a href="/vue/theory/reader/reader.html" class="nav-link">
+  渲染函数
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="CSS" class="dropdown-title"><span class="title">CSS</span> <span class="arrow down"></span></button> <button type="button" aria-label="CSS" class="mobile-dropdown-title"><span class="title">CSS</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/css/animation/01.html" class="nav-link">
+  动画
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="JavaScript" class="dropdown-title"><span class="title">JavaScript</span> <span class="arrow down"></span></button> <button type="button" aria-label="JavaScript" class="mobile-dropdown-title"><span class="title">JavaScript</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          积累
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/javaScript/usejs/icuFun.html" class="nav-link">
+  js常用方法
+</a></li><li class="dropdown-subitem"><a href="/javaScript/usejs/skill.html" class="nav-link">
+  功能案例
+</a></li></ul></li><li class="dropdown-item"><h4>
+          读书
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/javaScript/v4/01.html" class="nav-link">
+  JavaScript高级程序（第四版）
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="TypeScript" class="dropdown-title"><span class="title">TypeScript</span> <span class="arrow down"></span></button> <button type="button" aria-label="TypeScript" class="mobile-dropdown-title"><span class="title">TypeScript</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          读书
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/typeScript/study/01.html" class="nav-link">
+  TypeScript入门教程
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Node" class="dropdown-title"><span class="title">Node</span> <span class="arrow down"></span></button> <button type="button" aria-label="Node" class="mobile-dropdown-title"><span class="title">Node</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/node/base/01.html" class="nav-link">
+  Node.js 基础
+</a></li><li class="dropdown-item"><!----> <a href="/node/express/01.html" class="nav-link">
+  Express
+</a></li></ul></div></div><div class="nav-item"><a href="/webpack/01.html" class="nav-link">
+  Webpack
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="webgis" class="dropdown-title"><span class="title">webgis</span> <span class="arrow down"></span></button> <button type="button" aria-label="webgis" class="mobile-dropdown-title"><span class="title">webgis</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/webgis/openlayers.html" class="nav-link">
+  Openlayers
+</a></li><li class="dropdown-item"><!----> <a href="/webgis/cesium.html" class="nav-link">
+  Cesium
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  🏡
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="面试题" class="dropdown-title"><span class="title">面试题</span> <span class="arrow down"></span></button> <button type="button" aria-label="面试题" class="mobile-dropdown-title"><span class="title">面试题</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/interview/js.html" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-item"><!----> <a href="/interview/vue.html" class="nav-link">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/interview/browser.html" class="nav-link">
+  浏览器
+</a></li><li class="dropdown-item"><!----> <a href="/interview/code.html" class="nav-link">
+  代码实现
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Vue" class="dropdown-title"><span class="title">Vue</span> <span class="arrow down"></span></button> <button type="button" aria-label="Vue" class="mobile-dropdown-title"><span class="title">Vue</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          vue全家桶
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vue/api/base/1.html" class="nav-link">
+  vue
+</a></li><li class="dropdown-subitem"><a href="/vue/vueRouter/01.html" class="nav-link">
+  vue-router
+</a></li><li class="dropdown-subitem"><a href="/vue/vuex/01.html" class="nav-link">
+  vuex
+</a></li></ul></li><li class="dropdown-item"><h4>
+          vue原理
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/vue/theory/reactive/01.html" class="nav-link">
+  vue3响应式原理
+</a></li><li class="dropdown-subitem"><a href="/vue/theory/reader/reader.html" class="nav-link">
+  渲染函数
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="CSS" class="dropdown-title"><span class="title">CSS</span> <span class="arrow down"></span></button> <button type="button" aria-label="CSS" class="mobile-dropdown-title"><span class="title">CSS</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/css/animation/01.html" class="nav-link">
+  动画
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="JavaScript" class="dropdown-title"><span class="title">JavaScript</span> <span class="arrow down"></span></button> <button type="button" aria-label="JavaScript" class="mobile-dropdown-title"><span class="title">JavaScript</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          积累
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/javaScript/usejs/icuFun.html" class="nav-link">
+  js常用方法
+</a></li><li class="dropdown-subitem"><a href="/javaScript/usejs/skill.html" class="nav-link">
+  功能案例
+</a></li></ul></li><li class="dropdown-item"><h4>
+          读书
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/javaScript/v4/01.html" class="nav-link">
+  JavaScript高级程序（第四版）
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="TypeScript" class="dropdown-title"><span class="title">TypeScript</span> <span class="arrow down"></span></button> <button type="button" aria-label="TypeScript" class="mobile-dropdown-title"><span class="title">TypeScript</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          读书
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/typeScript/study/01.html" class="nav-link">
+  TypeScript入门教程
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Node" class="dropdown-title"><span class="title">Node</span> <span class="arrow down"></span></button> <button type="button" aria-label="Node" class="mobile-dropdown-title"><span class="title">Node</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/node/base/01.html" class="nav-link">
+  Node.js 基础
+</a></li><li class="dropdown-item"><!----> <a href="/node/express/01.html" class="nav-link">
+  Express
+</a></li></ul></div></div><div class="nav-item"><a href="/webpack/01.html" class="nav-link">
+  Webpack
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="webgis" class="dropdown-title"><span class="title">webgis</span> <span class="arrow down"></span></button> <button type="button" aria-label="webgis" class="mobile-dropdown-title"><span class="title">webgis</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/webgis/openlayers.html" class="nav-link">
+  Openlayers
+</a></li><li class="dropdown-item"><!----> <a href="/webgis/cesium.html" class="nav-link">
+  Cesium
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>Node.js</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/node/base/01.html" class="sidebar-link">一、初识node.js</a></li><li><a href="/node/base/02.html" class="sidebar-link">二、fs文件系统模块</a></li><li><a href="/node/base/03.html" class="sidebar-link">三、 path路径模块</a></li><li><a href="/node/base/04.html" class="sidebar-link">四、 http模块</a></li><li><a href="/node/base/05.html" class="sidebar-link">五、模块化</a></li><li><a href="/node/base/06.html" aria-current="page" class="active sidebar-link">六、npm与包</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/node/base/06.html#_6-1-什么是包" class="sidebar-link">6.1 什么是包</a></li><li class="sidebar-sub-header"><a href="/node/base/06.html#_6-2-从哪里下载" class="sidebar-link">6.2 从哪里下载</a></li><li class="sidebar-sub-header"><a href="/node/base/06.html#_6-3-npm命令" class="sidebar-link">6.3 npm命令</a></li><li class="sidebar-sub-header"><a href="/node/base/06.html#_6-4-包的语义化版本规范" class="sidebar-link">6.4 包的语义化版本规范</a></li><li class="sidebar-sub-header"><a href="/node/base/06.html#_6-5-package-json配置文件" class="sidebar-link">6.5 package.json配置文件</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/node/base/06.html#_6-5-1-dependencies属性" class="sidebar-link">6.5.1 dependencies属性</a></li><li class="sidebar-sub-header"><a href="/node/base/06.html#_6-5-2-devdependencies属性" class="sidebar-link">6.5.2 devDependencies属性</a></li></ul></li><li class="sidebar-sub-header"><a href="/node/base/06.html#_6-6-包的分类" class="sidebar-link">6.6 包的分类</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/node/base/06.html#_6-6-1-项目包" class="sidebar-link">6.6.1 项目包</a></li><li class="sidebar-sub-header"><a href="/node/base/06.html#_6-6-2-全局包" class="sidebar-link">6.6.2 全局包</a></li></ul></li><li class="sidebar-sub-header"><a href="/node/base/06.html#_6-7-规范的包结构" class="sidebar-link">6.7 规范的包结构</a></li><li class="sidebar-sub-header"><a href="/node/base/06.html#_6-8-发布包" class="sidebar-link">6.8 发布包</a></li></ul></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>Express</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="六、npm与包"><a href="#六、npm与包" class="header-anchor">#</a> 六、npm与包</h1> <h2 id="_6-1-什么是包"><a href="#_6-1-什么是包" class="header-anchor">#</a> 6.1 什么是包</h2> <blockquote><p>Node.js 中的第三方模块又叫做包.</p> <p>不同于Node.js中的内置模块与自定义模块, 包是由第三方个人或团队开发出来的,使用时需要进行下载</p></blockquote> <h2 id="_6-2-从哪里下载"><a href="#_6-2-从哪里下载" class="header-anchor">#</a> 6.2 从哪里下载</h2> <blockquote><p>国外一家IT公司,叫做 npm,Inc.这家公司旗下有个一个非常著名的网站:https://www.npmjs.com/ ,它是全球最大的包共享平台</p> <p>npm, Inc.公司提供了一个地址为 https://registry.npmjs.org/ 的服务器,来对外共享所有的包,我们可以从这个服务器上下载自己所需的包.还提供了一个包管理工具,从上边的服务器上把需要的包下载到本地使用.</p> <p>这个包管理工具叫做 Node Package Manager(简称npm包管理工具),这个包管理工具随着Node.js的安装包一起被安装到了用户的电脑上.</p></blockquote> <h2 id="_6-3-npm命令"><a href="#_6-3-npm命令" class="header-anchor">#</a> 6.3 npm命令</h2> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">npm</span> <span class="token function">install</span> 包的完整名称
+或
+<span class="token function">npm</span> i 包的完整名称
+
+<span class="token comment"># 安装多个包</span>
+<span class="token function">npm</span> i 包名1 包名2 <span class="token punctuation">..</span>.
+
+<span class="token comment"># 安装指定版本</span>
+<span class="token function">npm</span> i 包的完整名称@版本号
+
+<span class="token comment"># 卸载包</span>
+<span class="token function">npm</span> uninstall 包名
+</code></pre></div><p><strong>首次安装后会多一些文件</strong></p> <ul><li><strong>node_modules</strong> 文件夹,用来存储所有已安装到项目中的包.require()导入第三方包时,就是从这个目录查找并加载包的.</li> <li><strong>package-lock.json</strong> 配置文件,用来记录 <code>node_modules</code>目录下的每一个包的下载信息,例如:包的名字,版本号,下载地址等.</li> <li><strong>package.json</strong>配置文件, 包管理配置文件，项目或者模块包的描述，里面包含许多元信息.比如项目名称，项目版本，项目执行入口文件，项目贡献者等等。npm install 命令会根据这个文件下载所有依赖模块。</li></ul> <h2 id="_6-4-包的语义化版本规范"><a href="#_6-4-包的语义化版本规范" class="header-anchor">#</a> 6.4 包的语义化版本规范</h2> <blockquote><p>包的版本号是以&quot;点分十进制&quot;的形式定义的,总共有三位数,例如:2.24.0</p></blockquote> <p><strong>含义:</strong></p> <ul><li>第一位数: 大版本</li> <li>第二位数: 功能版本</li> <li>第三位数: Bug修复版本</li></ul> <p>版本号提升规则: <strong>只要前面的版本号增长了,则后边的版本号归零</strong></p> <h2 id="_6-5-package-json配置文件"><a href="#_6-5-package-json配置文件" class="header-anchor">#</a> 6.5 package.json配置文件</h2> <blockquote><p>通过这个配置文件 更方便我们管理包以及包版本控制，以及项目信息配置等。</p> <p>通过 <code>npm i</code> 安装包时会自动将包版本信息添加到此文件中</p></blockquote> <p><strong>通过命令快速创建配置文件</strong></p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">npm</span> init
+或
+<span class="token comment"># y表示yes 所有选项按照默认选择</span>
+<span class="token function">npm</span> init <span class="token parameter variable">-y</span>
+</code></pre></div><p><em>此命令不能在目录包含中文或空格的目录下运行</em></p> <h3 id="_6-5-1-dependencies属性"><a href="#_6-5-1-dependencies属性" class="header-anchor">#</a> 6.5.1 dependencies属性</h3> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;dependencies&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;moment&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^2.29.3&quot;</span><span class="token punctuation">,</span>
+     ...
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><blockquote><p>此属性用来记录安装了哪些包.</p> <p>如果某些包开发和上线都需要，那就安装到dependencies,(默认安装就会安装到这个位置)</p></blockquote> <h3 id="_6-5-2-devdependencies属性"><a href="#_6-5-2-devdependencies属性" class="header-anchor">#</a> 6.5.2 devDependencies属性</h3> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token punctuation">{</span>
+  <span class="token string-property property">&quot;devDependencies&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token string-property property">&quot;moment&quot;</span><span class="token operator">:</span> <span class="token string">&quot;^2.29.3&quot;</span><span class="token punctuation">,</span>
+     <span class="token operator">...</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><blockquote><p>如果某些包只有在项目开发阶段会用到，在项目上线之后就不用了，则建议把这些包记录到devDependencies中</p></blockquote> <p><strong>安装此属性下的命令</strong></p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">npm</span> i 包名 <span class="token parameter variable">-D</span>
+<span class="token comment"># 等价于</span>
+<span class="token function">npm</span> <span class="token function">install</span> 包名 --save-dev
+</code></pre></div><h2 id="_6-6-包的分类"><a href="#_6-6-包的分类" class="header-anchor">#</a> 6.6 包的分类</h2> <h3 id="_6-6-1-项目包"><a href="#_6-6-1-项目包" class="header-anchor">#</a> 6.6.1 项目包</h3> <blockquote><p>被安装到项目的 <code>node_modules</code>目录的包都是项目包</p></blockquote> <p><strong>项目包又分为两类</strong></p> <ul><li>开发依赖包（被记录到devDependencies属性中的包，只有在开发期间会用到）</li> <li>核心依赖包（被记录到dependencies属性中的包，在开发或生产环境都会用到的）</li></ul> <h3 id="_6-6-2-全局包"><a href="#_6-6-2-全局包" class="header-anchor">#</a> 6.6.2 全局包</h3> <blockquote><p>在执行 npm install 命令时，如果提供了-g参数，则会把包安装到全局包</p> <p>默认路径为：C:\Users\用户目录\AppData\Roaming\npm\node_modules</p></blockquote> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">npm</span> root <span class="token parameter variable">-g</span> <span class="token comment"># 查看全局包安装位置</span>
+
+<span class="token function">npm</span> i 包名 <span class="token parameter variable">-g</span> <span class="token comment"># 安装全局包</span>
+
+<span class="token function">npm</span> uninstall 包名 <span class="token parameter variable">-g</span> <span class="token comment"># 卸载全局包</span>
+</code></pre></div><h2 id="_6-7-规范的包结构"><a href="#_6-7-规范的包结构" class="header-anchor">#</a> 6.7 规范的包结构</h2> <p>一个规范的包，他的组成结构，必须符合一下3点要求：</p> <ol><li>包必须以单独的目录而存在</li> <li>包的顶级目录下要必须包含 <code>package.json</code> 这个包管理配置文件</li> <li><code>package.json</code>中必须包含<strong>name</strong>、<strong>version</strong>、<strong>main</strong>这三个属性，分别代表<strong>包的名字</strong>、<strong>版本号</strong>、<strong>包的入口</strong></li></ol> <h2 id="_6-8-发布包"><a href="#_6-8-发布包" class="header-anchor">#</a> 6.8 发布包</h2> <blockquote><p>发布一个自己的包</p></blockquote> <ol><li><p>创建项目文件</p> <p>新建一个 <code>jfirst</code>目录</p></li> <li><p>在当前目录运行 <code>npm init -y</code></p> <p>编辑 <code>package.json</code> 文件</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;jfirst&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;version&quot;</span><span class="token operator">:</span> <span class="token string">&quot;1.0.0&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;description&quot;</span><span class="token operator">:</span> <span class="token string">&quot;第一次发布包&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;main&quot;</span><span class="token operator">:</span> <span class="token string">&quot;index.js&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;keywords&quot;</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;study&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;test&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;jun233s&quot;</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;scripts&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;test&quot;</span><span class="token operator">:</span> <span class="token string">&quot;echo \&quot;Error: no test specified\&quot; &amp;&amp; exit 1&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;author&quot;</span><span class="token operator">:</span> <span class="token string">&quot;jun233s&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;license&quot;</span><span class="token operator">:</span> <span class="token string">&quot;ISC&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>**name：**项目名称，发布到网站上的名字，以这个为准，<strong>与项目文件夹名称无关</strong></p> <p>**version：**项目版本号</p> <p>**description：**项目描述，当在 https://npmjs.com 网站中搜索包时会展示</p> <p>**main：**包入口文件</p> <p>**keywords：**搜索关键词，当在 https://npmjs.com 网站中搜索时可以根据这些关键词进行搜索</p> <p>**license：**包的开源许可协议</p></li> <li><p>创建主入口文件</p> <blockquote><p>新建一个与 <code>package.json</code> 文件中配置的主入口文件名字一致的文件 <code>index.js</code></p> <p>我们在这个文件中写了一个格式化时间的方法，这也是这个包的一个功能</p></blockquote> <p><strong>index.js</strong></p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">/**
+ * 包入口文件
+ */</span>
+
+<span class="token comment">// 定义格式化时间的函数</span>
+<span class="token keyword">function</span> <span class="token function">dateFormat</span><span class="token punctuation">(</span><span class="token parameter">dataStr</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">const</span> dt <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Date</span><span class="token punctuation">(</span>dataStr<span class="token punctuation">)</span>
+
+    <span class="token keyword">const</span> y <span class="token operator">=</span> <span class="token function">padZero</span><span class="token punctuation">(</span>dt<span class="token punctuation">.</span><span class="token function">getFullYear</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token keyword">const</span> m <span class="token operator">=</span> <span class="token function">padZero</span><span class="token punctuation">(</span>dt<span class="token punctuation">.</span><span class="token function">getMonth</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span>
+    <span class="token keyword">const</span> d <span class="token operator">=</span> <span class="token function">padZero</span><span class="token punctuation">(</span>dt<span class="token punctuation">.</span><span class="token function">getDate</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+    <span class="token keyword">const</span> hh <span class="token operator">=</span> <span class="token function">padZero</span><span class="token punctuation">(</span>dt<span class="token punctuation">.</span><span class="token function">getHours</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token keyword">const</span> mm <span class="token operator">=</span> <span class="token function">padZero</span><span class="token punctuation">(</span>dt<span class="token punctuation">.</span><span class="token function">getMinutes</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token keyword">const</span> ss <span class="token operator">=</span> <span class="token function">padZero</span><span class="token punctuation">(</span>dt<span class="token punctuation">.</span><span class="token function">getSeconds</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+    <span class="token keyword">return</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>y<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">-</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>m<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">-</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>d<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string"> </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>hh<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">:</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>mm<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">:</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>ss<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span>
+<span class="token punctuation">}</span>
+<span class="token comment">// 补零</span>
+<span class="token keyword">function</span> <span class="token function">padZero</span><span class="token punctuation">(</span><span class="token parameter">n</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">return</span> n <span class="token operator">&gt;</span> <span class="token number">9</span> <span class="token operator">?</span> n <span class="token operator">:</span> <span class="token string">'0'</span> <span class="token operator">+</span> n
+
+<span class="token punctuation">}</span>
+
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+    dateFormat
+<span class="token punctuation">}</span>
+</code></pre></div></li> <li><p>模块化拆分</p> <p>新建一个 <code>src</code>目录，将我们的功能分模块放入</p> <p><strong>/src/dateFormat.js</strong></p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">// 定义格式化时间的函数</span>
+<span class="token keyword">function</span> <span class="token function">dateFormat</span><span class="token punctuation">(</span><span class="token parameter">dataStr</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">const</span> dt <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">Date</span><span class="token punctuation">(</span>dataStr<span class="token punctuation">)</span>
+
+    <span class="token keyword">const</span> y <span class="token operator">=</span> <span class="token function">padZero</span><span class="token punctuation">(</span>dt<span class="token punctuation">.</span><span class="token function">getFullYear</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token keyword">const</span> m <span class="token operator">=</span> <span class="token function">padZero</span><span class="token punctuation">(</span>dt<span class="token punctuation">.</span><span class="token function">getMonth</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span>
+    <span class="token keyword">const</span> d <span class="token operator">=</span> <span class="token function">padZero</span><span class="token punctuation">(</span>dt<span class="token punctuation">.</span><span class="token function">getDate</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+    <span class="token keyword">const</span> hh <span class="token operator">=</span> <span class="token function">padZero</span><span class="token punctuation">(</span>dt<span class="token punctuation">.</span><span class="token function">getHours</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token keyword">const</span> mm <span class="token operator">=</span> <span class="token function">padZero</span><span class="token punctuation">(</span>dt<span class="token punctuation">.</span><span class="token function">getMinutes</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+    <span class="token keyword">const</span> ss <span class="token operator">=</span> <span class="token function">padZero</span><span class="token punctuation">(</span>dt<span class="token punctuation">.</span><span class="token function">getSeconds</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+
+    <span class="token keyword">return</span> <span class="token template-string"><span class="token template-punctuation string">`</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>y<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">-</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>m<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">-</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>d<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string"> </span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>hh<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">:</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>mm<span class="token interpolation-punctuation punctuation">}</span></span><span class="token string">:</span><span class="token interpolation"><span class="token interpolation-punctuation punctuation">${</span>ss<span class="token interpolation-punctuation punctuation">}</span></span><span class="token template-punctuation string">`</span></span>
+<span class="token punctuation">}</span>
+<span class="token comment">// 补零</span>
+<span class="token keyword">function</span> <span class="token function">padZero</span><span class="token punctuation">(</span><span class="token parameter">n</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token keyword">return</span> n <span class="token operator">&gt;</span> <span class="token number">9</span> <span class="token operator">?</span> n <span class="token operator">:</span> <span class="token string">'0'</span> <span class="token operator">+</span> n
+
+<span class="token punctuation">}</span>
+
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+    dateFormat
+<span class="token punctuation">}</span>
+</code></pre></div><p>修改主入口文件 <code>index.js</code></p> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token comment">/**
+ * 包入口文件
+ */</span>
+<span class="token keyword">const</span> date <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'./src/dateFormat'</span><span class="token punctuation">)</span>
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token operator">...</span>date
+<span class="token punctuation">}</span>
+</code></pre></div></li> <li><p>编写说明文档</p> <p>包的根目录一般有一个 <code>READEME.md</code> 文件，用来说明介绍我们的包如果使用等。</p></li> <li><p>发布包</p> <ol><li><p>注册npm账号</p> <p><a href="https://www.npmjs.com/" target="_blank" rel="noopener noreferrer">npm官网<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p></li> <li><p>终端中登录npm账号</p> <p>输入以下命令一次输入用户名、密码、邮箱</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">npm</span> login
+</code></pre></div><p><em><a href="https://www.cnblogs.com/corleone113/p/12116334.html" target="_blank" rel="noopener noreferrer">npm发布包时遇到：This operation requires a one-time password. 如何解决 - 科学家丶 - 博客园 (cnblogs.com)<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></em></p></li> <li><p>发布包</p> <p>将终端切换到包的根目录，执行命令</p> <div class="language-javascript extra-class"><pre class="language-javascript"><code>npm publish
+</code></pre></div></li></ol></li></ol></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/node/base/05.html" class="prev">
+        五、模块化
+      </a></span> <span class="next"><a href="/node/express/01.html">
+        一、初始Express
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.53769578.js" defer></script><script src="/assets/js/2.2eda075d.js" defer></script><script src="/assets/js/1.e16b5851.js" defer></script><script src="/assets/js/46.2b4fe8e6.js" defer></script>
+  </body>
+</html>
