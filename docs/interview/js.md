@@ -1,11 +1,11 @@
 # javascript
 ## 1.JavaScript 的数据类型
 
-公共有 7 种数据类型分为：
+共有 7 种数据类型分为：
 
 **基本数据类型：**`string`、`number`、`boolean`、`null`、`undefined`、`symbol`(ES6 新增，创建之后第独一无二不可以改变的数据类型)
 
-**引用数据类型：**`Object`
+**引用数据类型：**`Object`  (`Array`、`Date`、`RegExp`、`Error`、`Function`、`Map`、`Set`)
 
 ## 2. new 操作符做了什么事情
 
@@ -235,13 +235,13 @@ console.log(str.__proto__ === String.prototype); // true
 
 
 ## 10. js实现深拷贝的方法有哪些，需要注意哪些问题？
-   
+
    **实现方法**
-   
+
    1. **JSON.parse(JSON.stringify())：** 将对象转换为字符串，然后再将字符串转换为新的对象。这种方法比较简单，但是也有一些问题，比如 `date` 类型会被转换成一个字符串，而 `RegExp` 类型会被转换成空
    2. **递归：** 这种方法是最为常见也是最容易想到的一种方法，即判断每一级的类型，如果是对象就创建新的对象，如果是数组就创建新数组。
    3. **使用第三方库：** 可以使用 `lodash` 库中的 `_.cloneDeep()` 方法，该方法可以实现对对象的深拷贝。
-   
+
    **注意问题**
 
    1. **循环引用：** 当对象存在循环引用时，可能会导致无限递归的情况。
@@ -251,7 +251,7 @@ console.log(str.__proto__ === String.prototype); // true
 ## 11. JS的数据类型有哪些？如何判断js的数据类型?
 
    **基础数据类型**
-   
+
   `number`：数字类型
 
   `string`：字符串类型
@@ -267,12 +267,12 @@ console.log(str.__proto__ === String.prototype); // true
    **引用数据类型**
 
   `object`：对象类型包括普通对象、数组、函数等
-  
+
    **判断js数据类型的方式**
    1. `typeof`：返回值是字符串，返回的数据类型
    2. `instanceof`：返回值是布尔类型，判断对象是否是某个构造函数的实例
    3. `Object.prototype.toString.call()`：这是最准确可靠的判断数据类型的方法，它返回一个形如 "[object Type]" 的字符串，其中 Type 是具体的数据类型。
-  
+
   ```javascript
   let num = 123;
   console.log(typeof num); // 'number'
