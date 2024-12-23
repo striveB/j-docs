@@ -251,6 +251,10 @@ module.exports = {
         text: 'webgis',
         items: [
           {
+            text: 'gis',
+            link: '/webgis/index',
+          },
+          {
             text: 'Openlayers',
             link: '/webgis/openlayers',
           },
