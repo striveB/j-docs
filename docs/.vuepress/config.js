@@ -132,6 +132,13 @@ const nodeSidebar = [
     children: ['express/01', 'express/02', 'express/03'],
   },
 ];
+const webgisSidebar = [
+  {
+    title: 'webgis',
+    sidebarDepth: 5,
+    children: ['', 'openlayers', 'cesium'],
+  },
+];
 module.exports = {
   title: '📘 远俊的知识库',
   head: [['link', { rel: 'icon', href: './public/images/book-alt.svg' }]],
@@ -150,6 +157,7 @@ module.exports = {
       '/node/': nodeSidebar,
       '/webpack/': webpackSidebar,
       '/css/': cssSidebar,
+      '/webgis/': webgisSidebar
     },
     nav: [
       { text: '🏡', link: '/' },
@@ -251,7 +259,7 @@ module.exports = {
         text: 'webgis',
         items: [
           {
-            text: 'gis',
+            text: '综合',
             link: '/webgis/index',
           },
           {

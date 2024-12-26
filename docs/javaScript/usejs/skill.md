@@ -377,3 +377,30 @@ let res3 = email.replace(/(\w{1}).*(\w{1})@(.*)/, "$1***$2@$3")
 console.log(res3) // 1***5@qq.com
 ```
 
+## 08. 随机数的应用
+
+```javascript
+// 生成一个介于min和max之间的随机数整数
+function random(min, max) {
+
+    // 向下取整
+    // 不包括max
+    return Math.floor(Math.random() * (max - min)) + min;
+    // 包括max
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+    // 及不包含min也不包括max
+    min += 1
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+
+
+    // 向上取整
+    // 不包括min
+    return Math.ceil(Math.random() * (max - min)) + min;
+    // 包括min
+    return Math.ceil(Math.random() * (max - min + 1)) + min;
+    // 及不包含max也不包括min
+    max -= 1
+    return Math.ceil(Math.random() * (max - min + 1)) + min;
+
+}
+```
