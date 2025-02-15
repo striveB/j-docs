@@ -2,7 +2,7 @@ const interviewSidebar = [
   {
     title: '面试题',
     sidebarDepth: 5,
-    children: ['js', 'vue', 'browser', 'code',],
+    children: ['html-css', 'js', 'vue', 'browser', 'code'],
   },
 ];
 const vueSidebar = [
@@ -164,6 +164,10 @@ module.exports = {
       {
         text: '面试题',
         items: [
+          {
+            text: 'HTML/CSS',
+            link: '/interview/html-css',
+          },
           {
             text: 'JavaScript',
             link: '/interview/js',
