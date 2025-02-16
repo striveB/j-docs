@@ -48,3 +48,19 @@
 
 - `<time>`：时间或日期。
 
+## 4. 什么是BFC
+
+BFC是块格式化上下文（Block Formatting Context）的缩写，它是一种CSS渲染机制。BFC是一个隔离的容器。
+**使用BFC可以解决的问题**
+- 开发BFC,可以解决浮动元素导致的父容器高度塌陷问题.
+- 开发BFC,可以解决margin重叠问题
+- 开发BFC,不会被其他浮动元素所覆盖
+
+**如何开启BFC**
+- 根元素
+- 浮动元素（float属性不为none）
+- 绝对定位元素（position属性为absolute或fixed）
+- display属性值为flow-root
+- 设置overflow属性不为visible
+- 设置为行内块元素（display: inline-block）
+- 表格布局（display: table）
