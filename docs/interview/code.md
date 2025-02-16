@@ -53,7 +53,4 @@ function removeLeast(str) {
 console.log(removeLeast(str)); // aaababee
 ```
 
-
-
-# Css
-
+> 面试官您好 我叫郜远俊 来自河南 01年 目前在北京做前端开发已经有三四年了 在目前这家公司工作有两年多的时间了 主要做的是与地图相关的项目 主要业务是林业还有防火的项目 

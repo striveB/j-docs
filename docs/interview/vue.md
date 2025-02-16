@@ -59,6 +59,13 @@ export default: {
 ```
 
 ## 7.vue的双向绑定原理是什么
+vue.js 是采用数据劫持结合发布者-订阅者模式的方式，通过 vu2.x (`Object.defineProperty()`) 或 vue3.x (`Proxy `) 来劫持各个属性的`setter`，`getter`，在数据变动时发布消息给订阅者，触发相应的监听回调。
+
+**发布-订阅模式**
+
+Vue 通过 Dep（依赖收集器）和 Watcher（观察者）实现发布-订阅。
+- Dep：每个属性都有一个 Dep 实例，用于收集依赖（Watcher）。
+- Watcher：当数据变化时，通知所有依赖的 Watcher 更新视图。
 
 
 
